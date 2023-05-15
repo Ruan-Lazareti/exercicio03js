@@ -1,0 +1,72 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --text-color: #323238;
+    --icons-bg: #E1E1E6;
+    --icons-bg-press: #02799D;
+    --bg-pressed: #02799D;
+    --draw-pressed: #FFFFFF;
+    --bg-normal: #e1e1e6; 
+    --draw-normal: 	#323238;
+    font-size: 62.5%;
+}
+
+body {
+    min-height: 100vh;
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    align-items: center;
+}
+
+main {
+    display: flex; 
+    justify-content: space-between;
+    align-items: center;
+    min-width: 82.0rem;
+    height: 33.0rem;
+    margin: auto;
+}
+
+
+.timer {
+    display: flex;
+
+    font-size: 12.6rem;
+    font-weight: 500;
+    line-height: 14.8rem;
+    color: var(--text-color)
+}
+
+.controls {
+    display: flex;
+    justify-content: space-between;
+}
+
+button {
+    background-color: transparent;
+    border: none;
+
+    cursor: pointer;
+}
+
+button:hover {
+    transform: scale(1.05);
+}
+
+.cardOne svg path{
+    fill: #02799D;
+}
+
+.cardOne svg path + path {
+    fill: #FFFFFF;
+}
+
+.sounds {
+    display: grid;
+    grid-template-columns: 13.8rem 13.8rem;
+    gap: 3.2rem;
+}
